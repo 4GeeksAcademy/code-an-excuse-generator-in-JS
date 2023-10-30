@@ -11,10 +11,10 @@ window.onload = function() {
 };
 
 let generateExcuse = () => {
-  let who = ["The dog", "My grandma", "His turtle", "My bird"];
+  let subject = ["The dog", "My grandma", "His turtle", "My bird"];
   let action = ["ate", "peed", "crushed", "broke"];
-  let what = ["my homework", "the keys", "the car"];
-  let when = [
+  let object = ["my homework", "the keys", "the car"];
+  let time = [
     "before the class",
     "right on time",
     "when I finished",
@@ -22,18 +22,18 @@ let generateExcuse = () => {
     "while I was praying"
   ];
 
-  let whoExcuse = Math.floor(Math.random() * who.length);
-  let actionExcuse = Math.floor(Math.random() * action.length);
-  let whatExcuse = Math.floor(Math.random() * what.length);
-  let whenExcuse = Math.floor(Math.random() * when.length);
+  let subjects = Math.floor(Math.random() * subject.length);
+  let actions = Math.floor(Math.random() * action.length);
+  let objects = Math.floor(Math.random() * object.length);
+  let times = Math.floor(Math.random() * time.length);
 
   return (
-    who[whoExcuse] +
+    who[subjects] +
     " " +
-    action[actionExcuse] +
+    action[actions] +
     " " +
-    what[whatExcuse] +
+    what[objects] +
     " " +
-    when[whenExcuse]
+    when[times]
   );
 };
